@@ -9,7 +9,8 @@ import Foundation
 
 struct RMCharacter:Codable{
     let id: Int
-    let name, status, species, type: String
+    let name,species, type: String
+    let status:RMCharacterStatus
     let gender: String
     let origin, location: Location
     let image: String

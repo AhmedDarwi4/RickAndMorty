@@ -8,14 +8,17 @@
 import Foundation
 
 struct RMGetAllCharactersResponse:Codable{
+    
     let info:Info
     let results:[RMCharacter]
-}
+    
+    //MARK: - Info
+    struct Info:Codable{
+        let count,pages:Int
+        let next,prev:String?
+    }
 
-//MARK  - Info
-struct Info:Codable{
-    let count,pages:Int
-    let next,prev:String?
+
 }
 
 
